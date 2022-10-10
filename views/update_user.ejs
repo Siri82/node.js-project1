@@ -1,0 +1,64 @@
+<!--include Header-->
+<%- include('include/_header')%>
+<!--/include Header-->
+
+<!--Main Site-->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/"><i class="fas fa-angle-double-left"></i> All Users</a>
+            </div>
+        </div>
+
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update User</h2>
+            <span class="text-light">Use the below form to update account</span>
+        </div>
+
+        <form method="post" id="update_user">
+            <div class="update_user">
+                <div class="form-group">
+                    <label for="username" class="text-light">UserName</label>
+                    <input type="hidden" name="id" value="<%= user._id %>">
+                    <input type="text" name="username" value="<%= user.username %>" placeholder="Sridhar Upputuri">
+                </div>
+        
+                <div class="form-group">
+                    <label for="epwd" class="text-light">ePwd</label>
+                    <input type="text" name="epwd" value="<%= user.epwd %>" placeholder="Encrypted password">
+                </div>
+        
+                <div class="form-group">
+                    <label for="usergroup" class="text-light">UserGroup</label>
+                    <input type="text" name="usergroup" value="<%= user.usergroup %>" placeholder="">
+                </div>
+        
+                <div class="form-group">
+                    <label for="aut" class="text-light">AUT</label>
+                    <input type="text" name="aut" value="<%= user.aut %>" placeholder="">
+                </div>
+        
+                <div class="form-group">
+                    <label for="appenv" class="text-light">AppEnv</label>
+                    <input type="text" name="appenv" value="<%= user.appenv %>" placeholder="">
+                </div>
+        
+                <div class="form-group">
+                    <label for="info" class="text-light">Info</label>
+                    <input type="text" name="info" value="<%= user.info %>" placeholder="">
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit" class="btn text-dark update">Save</button>
+                </div>
+            </div>
+        </form>
+        
+    </div>
+</main>
+<!--/Main Site-->
+
+<!--include Footer-->
+<%- include('include/_footer')%>
+<!--/include Footer-->

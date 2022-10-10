@@ -1,0 +1,39 @@
+<!--form handling-->
+<form action="/api/users" method="post" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="username" class="text-light">UserName</label>
+            <input type="hidden" name="id" value="">
+            <input type="text" name="username" value="" placeholder="Sridhar Upputuri">
+        </div>
+
+        <div class="form-group">
+            <label for="epwd" class="text-light">ePwd</label>
+            <input type="text" name="epwd" value="" placeholder="Encrypted password">
+        </div>
+
+        <div class="form-group">
+            <label for="usergroup" class="text-light">UserGroup</label>
+            <input type="text" name="usergroup" value="" placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="aut" class="text-light">AUT</label>
+            <input type="text" name="aut" value="" placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="appenv" class="text-light">AppEnv</label>
+            <input type="text" name="appenv" value="" placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="info" class="text-light">Info</label>
+            <input type="text" name="info" value="" placeholder="">
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+    </div>
+</form>
